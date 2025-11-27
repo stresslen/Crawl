@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin | PriceComp</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="Image/iconChat.png">
+    <script src="js/auth.js"></script> </head>
+<body>
+    <aside class="sidebar" id="sidebar-container"></aside>
+
+    <main class="main-content">
+        <h2>Trang Quản trị</h2>
+        
+        <!-- Thống kê -->
+        <div class="setting-section" style="max-width: 900px; margin-bottom: 30px;">
+            <h3>📊 Thống kê hệ thống</h3>
+            <div id="stats-container" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; margin-top: 15px;">
+                <div style="background: #f0f9ff; padding: 20px; border-radius: 8px; text-align: center;">
+                    <h4 style="margin: 0; font-size: 2em; color: #0284c7;" id="stat-users">-</h4>
+                    <p style="margin: 5px 0 0 0; color: #666;">Người dùng</p>
+                </div>
+                <div style="background: #f0fdf4; padding: 20px; border-radius: 8px; text-align: center;">
+                    <h4 style="margin: 0; font-size: 2em; color: #16a34a;" id="stat-conversations">-</h4>
+                    <p style="margin: 5px 0 0 0; color: #666;">Hội thoại</p>
+                </div>
+                <div style="background: #fef3c7; padding: 20px; border-radius: 8px; text-align: center;">
+                    <h4 style="margin: 0; font-size: 2em; color: #d97706;" id="stat-messages">-</h4>
+                    <p style="margin: 5px 0 0 0; color: #666;">Tin nhắn</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quản lý Users -->
+        <div class="setting-section" style="max-width: 900px; margin-bottom: 30px;">
+            <h3>👥 Quản lý người dùng</h3>
+            <div id="users-list" style="margin-top: 15px;">
+                <p>Đang tải...</p>
+            </div>
+        </div>
+
+        <hr>
+
+    </main>
+
+    <script src="js/global.js"></script>
+    <script src="js/admin.js"></script>
+</body>
+</html>
